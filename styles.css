@@ -71,4 +71,15 @@ header {
     padding-left: 310px;
     justify-content: center;
     text-align: left;
+<<<<<<< HEAD
+=======
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+    p {
+        font-size: 8px;
+    }
+>>>>>>> tech
 }
