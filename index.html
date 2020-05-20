@@ -3,115 +3,123 @@
 <html>
   <head>
     <title>Tech Doc Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 
   <body>
 
-    <div id="navbar">
-      <nav class="navbar">
-        <h1>JS Documentation</h1>
+    <nav id="navbar">
+        <header>JS Documentation</header>
           <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#already-know">What you should already know</a></li>
-            <li><a href="#js-and-java">Javascript and Java</a></li>
-            <li><a href="#hello-world">Hello World</a></li>
-            <li><a href="#variables">Variables</a></li>
-            <li><a href="#declaring-vars">Declaring Variables</a></li>
-            <li><a href="#var-scope">Variable Scope</a></li>
-            <li><a href="#data-types">Data Types</a></li>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#already-know">What you should already know</a></li>
+            <li><a class="nav-link" href="#js-and-java">Javascript and Java</a></li>
+            <li><a class="nav-link" href="#hello-world">Hello World</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="#declaring-vars">Declaring Variables</a></li>
+            <li><a class="nav-link" href="#var-scope">Variable Scope</a></li>
           </ul>
       </nav>
-    </div>
-
+  
     <main id="main-doc">
       <section class="main-section" id="introduction">
-        <h2 id="introduction">Introduction</h2>
+        <header id="introduction">Introduction</header>
         <!-- P element one -->
-        <p>Introduction text</p>
-      </section>
-
-      <section class="main-doc"   id="What_you_should_already_know">
-        <h2 id="already-know">What you should already know</h2>
+        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them</p>
         <!-- P element two -->
-        <p>What you should already know text</p>
-      </section>
-
-      <section class="main-doc" id="Javascript_and_Java">
-        <h2 id="js-and-java">Javascript and Java</h2>
-        <!-- P element three -->
-        <p>Javascript and Java text</p>
-      </section>
-
-      <section class="main-doc" id="Hello_World">
-        <h2 id="hello-world">Hello World</h2>
-        <!-- P element four -->
-        <p>Hello World text</p>
-        <!-- Code element one -->
-        <code>Hello World code</code>
-        <!-- P element five -->
-        <p>Explanation of code</p>
-      </section>
-
-      <section class="main-doc" id="Variables">
-        <h2 id="variables">Variables</h2>
-        <!-- P element six -->
-        <p>Variables text 1</p>
-        <!-- P element seven -->
-        <p>Variables text 2</p>
-        <!-- P element eight -->
-        <p>Variables text 3</p>
-      </section>
-
-      <section class="main-doc" id="Declaring_Variables">
-        <h2 id="declaring-vars">Declaring Variables</h2>
-        <!-- P element nine -->
-        <p>Declaring variables text 1</p>
-        <!-- P element ten -->
-        <p>Declaring variables text 2</p>
-        <!-- Code element two -->
-        <code>Declaring variables code 1</code>
-        <!-- P element eleven -->
-        <p>Variables text 3</p>
-         <!-- P element twelve -->
-         <p>Variables text 4</p>
-         <!-- Code element three -->
-        <code>Declaring variables code 2</code>
-        <!-- P element thirteen -->
-        <p>Variables text 5</p>
-         <!-- P element fourteen -->
-         <p>Variables text 6</p>
-         <!-- Code element four -->
-        <code>Declaring variables code 3</code>
-      </section>
-
-      <section class="main-doc" id="Variable_Scope">
-        <h2 id="var-scope">Variable Scope</h2>
-         <!-- P element fifteen -->
-        <p>Variable scope text 1</p>
-        <!-- P element sixteen -->
-        <p>Variable scope text 2</p>
-        <!-- Code element five -->
-        <code>Variable scope code</code>
-      </section>
-
-      <section class="main-doc" id="Data_Types">
-        <h2 id="data-types">Data Types</h2>
-        <!-- P element seventeen -->
-        <p>Data types text 1</p>
+        <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example: </p>
         <ul>
           <!-- Li element one -->
-          <li>Item 1</li>
-          <!-- Li element two -->
-          <li>Item 2</li>
-          <!-- Li element three -->
-          <li>Item 3</li>
-          <!-- Li element four -->
-          <li>Item 4</li>
-          <!-- Li element five -->
-          <li>Item 5</li>
+          <li>
+            Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+          </li>
+           <!-- Li element two -->
+          <li>
+            Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. 
+          </li>
         </ul>
+      </section>
+
+      <section class="main-section"   id="What_you_should_already_know">
+        <header id="already-know">What you should already know</header>
+        <!-- P element three -->
+        <p>This guide assumes you have the following basic background:</p>
+        <ul>
+          <!-- Li element three -->
+          <li>
+            A general understanding of the Internet and the World Wide Web (WWW).
+          </li>
+          <!-- Li element four -->
+          <li>
+            Good working knowledge of HyperText Markup Language (HTML).
+          </li>
+          <!-- Li element five -->
+          <li>
+            Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript. 
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Javascript_and_Java">
+        <header id="js-and-java">Javascript and Java</header>
+        <!-- P element four -->
+        <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+        <!-- P element five -->
+        <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+        <!-- P element six -->
+        <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header id="hello-world">Hello World</header>
+        <!-- P element seven -->
+        <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+        <!-- Code element one -->
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");</code>
+        <!-- P element eight -->
+        <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header id="variables">Variables</header>
+        <!-- P element nine -->
+        <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+        <!-- P element ten -->
+        <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+        <!-- P element eleven -->
+        <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
+      </section>
+
+      <section class="main-section" id="Declaring_Variables">
+        <header id="declaring-vars">Declaring Variables</header>
+        <p>You can declare a variable in three ways:</p>
+        <p>With the keyword var. For example,</p>
+        <!-- Code element two -->
+        <code>var x = 42.</code>
+         <p>This syntax can be used to declare both local and global variables.</p>
+         <p>By simply assigning it a value. For example,</p>
+         <!-- Code element three -->
+        <code>x = 42.</code>
+        <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+        <p>With the keyword let. For example,</p>
+         <!-- Code element four -->
+        <code>let y = 13.</code>
+        <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+      </section>
+
+      <section class="main-section" id="Variable_Scope">
+        <header id="var-scope">Variable Scope</header>       
+        <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+        <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+        <!-- Code element five -->
+        <code>if (true) { var x = 5; } console.log(x); // 5</code>
+        <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+          defined</code>
       </section>
 
     </main>
   </body>
 </html>
+
